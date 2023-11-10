@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <<link rel="stylesheet" href="../Trabajo Int/css/style-int.css">
+  <link rel="shortcut icon" href="..//Trabajo Int/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/424f27db73.js" crossorigin="anonymous"></script>
+
+  <title>Fundación Bonzo</title>
+   
+</head>
+
+<!-- BODER en Bootstrap: border border-primary -->
+
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+
+    <div class="container-fluid">
+
+      <div class="d-flex flex-row align-items-center">
+        <a class="navbar-brand" href="./main.html">
+          <img src="../img/LOGO FUNDACION BONZO-A.png" alt="Logo" width="100" height="" class="d-inline-block align-text-top">
+        </a>
+        <h3>Fundación Bonzo</h3>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navContainer collapse navbar-collapse" id="navbarText">
+        <div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index2.html">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">El Parque</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Objetivos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quiero ser Voluntario</a>
+            </li>
+            <li class="nav-item">
+              <b><a class="nav-link tickets" href="../Trabajo Int/pages/contacto.html">Donaciones</a></b>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </nav>
+
+  <!-- banner -->
+  
+
+
+  <!-- Cards Oradores -->
+  <div class="speakersSetion">
+    <div class="boxText">
+      <div class="form-text">
+        CATEGORIAS
+      </div>
+      <h1>- Donaciones -</h1>
+    </div>
+
+    <!-- Cards -->
+    <div class="speakersCards">
+     
+      <!-- Student -->
+      <div class="card m-3" >
+        <div class="card-body ">
+          <h4 class="card-title">Efectivo</h4>
+          <p class="card-text">Tiene un descuento</p>
+          <span type="button" class="badge badge_01 p-3" value="1">
+            <h1>80%</h1>
+            <p>*Presencial</p>
+          </span>
+        </div>
+      </div>
+
+      <!-- Trainee -->
+      <div class="card m-3" >
+        <div class="card-body ">
+          <h4 class="card-title">Transferencias</h4>
+          <p class="card-text">Tiene un descuento</p>
+          <span type="button" class="badge badge_02 p-3" value="2">
+            <h1>50%</h1>
+            <p>*Presentar Comprobante</p>
+          </span>
+        </div>
+      </div>
+
+
+      <!-- Junior -->
+      <div class="card m-3" >
+        <div class="card-body ">
+          <h4 class="card-title">Tarjetas</h4>
+          <p class="card-text">Tiene un descuento</p>
+
+          <!-- <button type="button" id="resetButton" > -->
+            <span type="button" id="btnJunior" class="badge badge_03 p-3" value="3">
+              <h1>15%</h1>
+              <p>*Presentar Comprobante</p>
+            </span>
+          <!-- </button> -->
+         
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+ 
+
+
+  <!-- Form Venta tickets -->
+  <div class="container p-5">
+    <div class="boxText mb-5">
+      <div class="form-text">
+        DONACION
+      </div>
+      <h1>VALOR DE LA DONACION $<b id="ticketPrice"></b></h1>
+    </div>
+
+    <form id="formPay" class="form_setion">
+
+      <div class="row">
+        <div class="mb-3 col-6">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" required>
+        </div>
+        <div class="mb-3 col-6">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" required>
+        </div>
+      </div>
+
+      <!-- <div class="mb-3"> -->
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+        </div>
+        
+        <div class="row mb-3 g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="number" class="form-control" id="cantidadTickets" placeholder="cantidad" required>
+              <label >Cantidad</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <select class="form-select" id="floatingSelectGrid" required>
+                <option selected>Open this select menu</option>
+                <option value="1">Efectivo</option>
+                <option value="2">Transferencias</option>
+                <option value="3">Tarjetas</option>
+              </select>
+              <label for="floatingSelectGrid">Selecte category</label>
+            </div>
+          </div>
+        </div>
+
+        <div id="alertTotalPay">
+
+        </div>
+        
+
+      <!-- </div> -->
+      <div class="row">
+        <button type="button" id="resetButton" class="btnSend col-6 m-2 col-md">
+          <h5>Borrar</h5>
+        </button>
+        <button type="submit" class="btnSend col-6 m-2 col-md">
+          <h5>Resumen</h5>
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class=" text-white text-center py-3">
+    <div class="containerFooter">
+      <div class="">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <b><a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Cómo Ayudar</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Contáctanos</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Donaciones</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Cómo hacer las Donaciones</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Terminos y condiciones</a></b>
+          </li>
+          <li class="nav-item">
+            <b><a class="nav-link" href="#">Privacidad</a></b>
+          </li>
+        </ul>
+      </div>
+      <p class="mt-5">&copy; Codo a Codo por Claudio Marcelo Argañaraz 2023</p>
+    </div>
+  </footer>
+
+  <script src="../Js/gestiondonar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

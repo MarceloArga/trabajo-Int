@@ -1,0 +1,385 @@
+/* :root {
+   --bgcolor: #353A40;
+   --textcolor: white;
+   --bgbtn: #29A744;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+}
+body {
+   background:#baccc4 ;
+}
+header {
+   background-color: var(--bgcolor);
+   display: flexbox;
+   height: 5.2em;
+   color: var(--textcolor);
+   position: fixed;
+   top: 0;
+   z-index: 100;
+   width: 100%;
+
+   .logo {
+      display: inline-block;
+      margin-left: 2em;
+
+      & img {
+         height: 4em;
+         width: auto;
+      }
+
+      & h2 {
+         display: inline-block;
+         font-size: 18px;
+         line-height: normal;
+         text-transform: uppercase;
+
+      }
+   }
+
+   & nav {
+      display: flex;
+      float: right;      
+      padding: 1.5em 2em;
+
+      & a {
+         text-decoration: none;
+         color: var(--textcolor);
+         margin: 0 .5em;
+      }
+
+      .Donar {
+         color: var(--bgbtn);
+      }
+   }
+}
+
+ ------------
+
+
+.principal {
+   position: absolute;
+
+   --------------------------- & img {
+      filter: brightness(0.5);
+   } ----------------------
+
+   .content-principal {
+      position: relative;
+      margin: 5em;      
+      top: 0; 
+      width: 90%;     
+      height: 90%;
+      color: rgb(255, 255, 255);
+      text-align: right;
+      right: 0em;
+      line-height: normal;
+   }
+
+      & p {
+         margin: 3.5em 0em ;
+         font-weight: bold;
+         text-align: right;
+      }
+
+      & a {
+         border: 1px solid var(--textcolor);
+         border-radius: 5px;
+         text-decoration: none;
+         color: var(--textcolor);
+         padding: 15px 20px;
+      }
+
+      .btn-color {
+         background-color: var(--bgbtn);
+         border: 1px solid var(--bgbtn);
+      }
+   
+}
+
+
+
+
+
+.carrousel {
+   width: 100%;
+   --------------------------------height: 100%;-----------------------------------
+}
+
+.conteCarrousel {
+   border: 3px solid rgb(2, 117, 11);
+   width: 100%;
+   height: 400px;
+   overflow: hidden;
+}
+
+.itemCarrousel {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+.itemCarrouselTarjeta {
+   width: 100%;
+   height: 400px;
+   text-align: center;
+   padding: 75px 0 0 0 ;
+   
+
+   
+}
+
+.itemCarrouselArrows {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.itemCarrouselArrows>i:hover {
+   cursor: pointer;
+}
+
+.conteCarrouselController {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.conteCarrouselController>a {
+   text-decoration: none;
+   font-size: 2em;
+   color: grey;
+}
+
+.itemCarrouselArrows>a>i {
+   color: white;
+}
+
+img {
+   margin: 0.1em 0;
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+} 
+
+.grid-content {
+   display: grid;
+   grid-template-areas: 'orador orador'
+      'paisaje descrip'
+      'formulario formulario';
+   grid-template-columns: 50% 50%;
+   grid-template-rows: auto auto auto;
+
+   & div[class^='item'] {
+      border: 3px solid rgb(2, 117, 11);
+   }
+
+}
+
+.item-1 {
+   grid-area: orador;
+   .title {
+      font-size: x-large;
+      padding: 2em;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      height: 20vh;
+
+
+   }
+
+   .content-card {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+
+      & div[class^='card'] {
+         width: 250px;
+
+         & img {
+            width: 100%;
+            height: auto;
+         }
+         
+      & a {
+         border: 1px solid var(--textcolor);
+         border-radius: 5px;
+         text-decoration: none;
+         color: var(--textcolor);
+         padding: 5px 2px;
+      }
+
+      & .btn-color {
+         background-color: var(--bgbtn);
+         border: 2px solid var(--bgbtn);
+      }}
+   }
+}
+
+.item-2 {
+   grid-area: paisaje;
+
+   & img {
+      width: 100%;
+      height: 100%;
+   }
+}
+
+.item-3 {
+   grid-area: descrip;
+   background-color: var(--bgcolor);
+   color: var(--textcolor);
+   padding: 1em;
+   & a {
+      border: 1px solid var(--textcolor);
+      border-radius: 5px;           
+      color: var(--textcolor);
+      text-decoration: none;
+      padding: 3px 2px;
+   }
+
+   & .btn-color {
+      background-color: var(--bgbtn);
+      border: 5px solid var(--bgbtn);
+   }
+} 
+
+
+.item-4 {
+   grid-area: formulario;
+   background-size: 40px 40px;
+   background-position: 0 0 10px 10px;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   text-align: center;   
+}
+.form {
+      background-color: rgb(51, 122, 85);
+      margin: auto;
+      width: 90%;
+      max-width: 500px;
+      padding: 4.5em 3em;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+      text-align: center;
+   }
+
+.form_title {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+   }
+
+.form_paragraph {
+   font-weight: 300;
+}
+
+.form_link {
+   font-weight: 400;
+   color: rgb(255, 255, 255);
+
+}
+.form_container {   
+   margin-top: 3em;
+   display: grid;
+   gap: 2.5em;
+}
+.form_group {
+   position: relative;
+   color: var(--bgbtn);
+   text-align: center;
+
+ }
+
+.form_input {
+   text-align: left;
+   width: 70%;
+   background: white;
+   color: var(--bgcolor);
+   font-size: 1rem;  
+   padding:  .1em .3em;
+   border: 2px solid rgb(185, 184, 184);
+   border-bottom: 2px solid var(--bgcolor);
+}
+.form_label {
+   color: var(--textcolor);
+   cursor: pointer;
+   position: absolute;
+   top: 0%;
+   left: 1px;
+}   
+
+
+.btn-color {
+      background-color: var(--bgbtn);
+      border: 15px solid var(--bgbtn);
+      padding: 0.8em 0;
+   border: none;
+   border-radius: 0.5em;
+   font-size: large; 
+}
+  
+
+
+footer {
+   background-color: #f2f2f2;
+   padding: 20px 0;
+ }
+ 
+ .container_footer {
+   width: 100%;
+   margin: 0 auto;
+   text-align: right;
+   color: gray;
+ }
+   &.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+ ul {
+   list-style: none;
+   padding: 0;
+   text-align: center;
+ }
+ 
+ li {
+   display: inline-block;
+   margin-right: 10px;
+ }
+ 
+ a {
+   color: #333;
+   text-decoration: none;
+  
+ }
+ 
+ a:hover {
+   text-decoration: underline;
+ }
+
+----------Estilos para pantallas más pequeñas---------------------
+@media (max-width: 767px) {
+   header{
+        display: block;
+   }
+
+   footer li {
+       display: block;
+   }
+}
