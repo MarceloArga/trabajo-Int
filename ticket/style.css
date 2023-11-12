@@ -1,0 +1,190 @@
+
+
+
+
+
+.link-verde-ticket{
+    color: #9de853 !important; 
+}
+
+.row-group{
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between !important;
+}
+
+.grupo-tickets{
+    margin-top: 8rem;
+
+}
+
+.card-tickets {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-tickets:hover{
+    transform: scale(0.9);
+    transition: 0.8s linear;
+    background-color: rgb(221, 218, 218);
+}
+
+.card-tickets-efectivo{
+    border: solid 1px rgb(41, 128, 234) !important;
+}
+
+.card-tickets-transferencia{
+    border: solid 1px rgb(17, 150, 216) !important;
+}
+
+.card-tickets-tarjeta{
+    border: solid 1px rgb(225, 192, 28) !important;
+}
+
+.formulario-tickets{
+    padding-top: 5px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.total-donar{
+    background-color: #cee4ee !important;
+}
+
+.container-btn-tickets{
+    align-items: center !important;
+}
+
+.btn-ticket{
+    width: 48.3%;
+    border: none !important;
+    background-color: #7fc33b !important;
+}
+
+.footer-ticket{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-ticket .footer-link{
+    font-size: 15px !important;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 910px) {
+
+    .navbar{
+        position: static !important;
+    }
+
+    .card-superpuesta img{
+        filter: brightness(100%);
+    }
+
+    .tarjeta {
+        padding-right: 8.5rem !important;
+        max-height: 50vh;
+        padding-left: 40vw !important;
+        font-size: 0.5rem;
+    }
+
+    .card-img-overlay {
+        padding: 2rem !important;
+        position: static !important;
+        background-color: black;
+    }
+
+    .card-text1 {
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+    
+    .card-title1 {
+        font-size: 1.5rem;
+    }
+
+    .formulario{
+        padding-top: 5px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .footer-lista{
+        padding: 0 2rem;
+    }
+
+    .footer-link{
+        padding: 1.5rem 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .grupo-tickets{
+        margin-top: 2rem;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    .honolulu-text{
+        text-align: center;
+    }
+    
+    .honolulu-text .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    } 
+
+    .formulario-tickets{
+        width: 100%;
+    }
+
+   
+}
+
+@media screen and (max-width: 700px) {
+
+    .container-oradores {
+        margin-top: 20px;
+        padding: 1rem 2rem;
+    }
+}
+
+.contendorfotter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(28, 61, 78);
+        width: 100%;
+        height: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+  
+        & li {
+        
+          list-style: none;
+        }
+       }
+ 
+
+       footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 120px;
+        width: 100%;
+        color: aliceblue;
+        background-color:rgb(28, 61, 78);
+       }
