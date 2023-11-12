@@ -2,26 +2,211 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Trabajo Int/css/style-int.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
     <title>Fundación Bonzo</title>
-</head>
-<body class="intro">
-    
-    <div class="boxMain">
-        <div class="Container">
-            <span class="text first-text">Fundación Bonzo - </span>
-            <span class="text sec-text"></span>
-        </div>
+  </head>
+<body>
 
-        <div class="mt-5"> 
-            <a href="./pages/index2.html"> <button type="button" class="btn btn-outline-light m-2 px-5">Iniciar</button> </a>    
+ <!-- // El navegador -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark  ">
+      <div class="container-fluid">
+        <div class="navbar-brand contendor-logo">
+          <a href="javascript:void(0)"><img width="100" height="80" src="./img/LOGO FUNDACION BONZO-A.png" alt="icono-empresa"></a>
+          <h2>Fundación Bonzo</h2>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+              <ul class="navbar-nav ml-auto"> <!-- Utilizamos la clase "ml-auto" para alinear a la derecha -->
+                <li class="nav-item">
+                  <a class="nav-link navbar-text" href="#">La Fundación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbar-text" href="#">El Parque</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbar-text" href="#">Los Objetivos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navbar-text" href="#">Quiero ser Voluntario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-verde-ticket" href="./ticket/ticket.html">Donaciones</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+     
+        
+ <!-- // El header -->
+        <header id="carouselExampleIndicators " class="carousel slide  " data-bs-ride="carousel">
+        <div id=" contendor-imagenes carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner imagenes-filter ">
+            <div class="carousel-item active">
+                <img src="./img/img1.jpg" class="d-block w-100" alt="San Javier">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/img2.jpg" class="d-block w-100" alt="Cristo Bendicente">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/img3.jpg" class="d-block w-100" alt="Sierra San Javier">
+              </div>
+              
+              <div class="contendor-texto" >
+                <h1 class="text-end text-white" >Fundación Bonzo</h1>
+                     <p class="text-end">La Fundación Bonzo Tierra de Bendiciones, es <br>
+                      una entidad sin Fines de Lucro cuyo Principal Objetivo,<br> 
+                      es trabajar y colaborar en el rescate de animales<br>
+                      de toda especie en riesgo de Extinción.
+                     </p>
+                     <div >
+
+                         <button type="button" class="btn ms-3 btn-success float-sm-end ">Donaciones</button>   
+                         <button type="button" class="btn btn-outline-light text-dark float-sm-end" >Quiero ser Voluntario</button>
+                    </div>
+                  
+              </div>
         </div>
+        </div>
+        </header>
+
+
+
+<!-- // El primer banner -->
+<br>
+<h2 style="text-align: center;">EL LUGAR DE LA FUNDACIÓN</h2>
+<h5 style="text-align: center;">---PARQUES SIERRAS SAN JAVIER EN SAN MIGUEL DE TUCUMAN ---</h5>
+
+        <main class="design-lugar" >
+            <div class="card" >
+                <img  class="card-img-top" src="./img/Parque1.jpg" alt="Card image">
+                <div class="card-body">
+                    <p><span class="badge rounded-pill bg-warning">San Javier</span> <span class="badge rounded-pill bg-warning">Tucumán</span></p>
+                  <h4 class="card-title">Parque: Sierra San Javier</h4>
+                  <p class="card-text">El Parque Sierra de San Javier, ex Parque Biológico, es un área protegida de 14.174 ha. ubicada en la provincia de
+                    Tucumán, República Argentina. Fue creada en 1974, a partir de la Resolución Universitaria 001030/73.</p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            <div class="card" >
+                <img  class="card-img-top" src="./img/sanjavier6.jpeg" alt="Card image">
+                <div class="card-body">
+                 <p><span class="badge rounded-pill bg-warning">San Javier</span> <span class="badge rounded-pill bg-warning">Tucumán</span></p>
+                  <h4 class="card-title">El Lugar: Cerro San Javier</h4>
+                  <p class="card-text">El parque con los tipos de paseos. El parque cuenta con diferentes senderos: 1.-Sendero Anta Yacu. 2.-Sendero Las Yungas. 3.-Sendero La Cascada. 4.-Senda Puerta del Cielo.  5.-Sendero El Funicular.  6.-Sendero Velardez o de la Nina.</p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            <div class="card" >
+                <img  class="card-img-top" src="./img/TUCAN-3.jpg" alt="Card image">
+                <div class="card-body">
+                    <p><span class="badge rounded-pill bg-warning">San Javier</span> <span class="badge rounded-pill bg-warning">Tucumán</span></p>
+                  <h4 class="card-title">LA Fundación: Actividades</h4>
+                  <p class="card-text">Realizando las siguientes actividades para su concreción. Reclutamiento de los animales en estado de abandono para
+                    brindarle hospedaje permanente y transitorio y la asistencia veterinaria correspondiente y su posterior
+                    reinserción en hogares definitivos o de tránsito o en su habitad natural de corresponder.</p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+     
+
+            </main>
+     
+<!-- // El segundo banner -->
+<div class="articleSection">
+  <div class="article_setion_01"></div>
+  <div class="article_setion_02 p-3">
+    <h2>El Objetivo de la Fundación</h2>
+    <p>
+      La Fundación Bonzo su objetivo crear una poblacional de individuos reproductores del Tapir y (Tapirus terrestris),
+      y el
+      reforzamiento de las poblaciones del Tucán Grande (Ranphastos toco) dentro del Parque Sierra de San Javier de la
+      Universidad Nacional de Tucumán, con capacidad de dispersión hacia el resto de los Espacios Naturales Protegidos
+      (ENP)
+      de la provincia de Tucumán. Se espera de esta manera, contribuir a la recuperación en el país y la provincia y, a
+      través
+      de la reintroducción de especies del ecosistema de Yungas y favorecer la conservación de la estructura y riqueza
+      florísticas típicas de este eco región. Finalmente, combatir el tráfico y brindar oportunidades de desarrollo
+      turístico.
+      Paralelamente, las grandes aves frugívoras como el tucán.
+    </p>
+    <button type="button" class="btn btn-outline-light text-white ">Quiero ser Voluntario</button>
+  </div>
+</div>
+
+<!-- // El formulario -->
+<section >
+     <div class="container-fluid text-center" px-5 style="width: 65%">
+      <p class="text-uppercase pt-2 mb-0">
+        <small>conviértete en un</small>
+      </p>
+      <p class="h1 text-uppercase">Voluntario</p>
+      <p>
+        Siempre estamos necesitando ayuda de                
+        <abbr title="attribute">VOLUNTARIOS</abbr>. que nos colaboran en nuestras instalaciones para pasear los perritos,
+        bañarlos, jugar con ellos y consentirlos, alimentarlos y promocionarlos durante el día.
+      </p>
+      <div class="row g-2">
+        <div class="col-md">
+          <div class="mb-3">
+            <input
+            type="text"
+            class="form-control"
+            id="inputNombre"
+            placeholder="Nombre"
+            />
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="mb-3">
+            <input
+            type="text"
+            class="form-control"
+            id="inputApellido"
+            placeholder="Apellido"
+            />
+          </div>
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        placeholder="Que Actividades te destacas para ser un Voluntario"
+        ></textarea>
+        <p class="form-text alineadoIzq">
+          <small>Recuerda dejarnos tus datos así nos contactamos.</small>
+        </p>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary botonEnviar" type="button">
+          Enviar
+        </button>
+      </div>
     </div>
-    
-</body>
+  </section>
 
-<script src="./Js/Index.js"></script>
+  <!-- // El pie de página -->
+  <footer class="contendorfotter" >
+       <li><a href="#">Preguntas frecuentes</a></li>
+       <li><a href="#">Contáctanos</a></li>
+       <li><a href="#">Prensa</a></li>
+       <li><a href="#">Conferencias</a></li>
+       <li><a href="#">Terminos y condiciones</a></li>
+       <li><a href="#">Privacidad</a></li>
+       <li><a href="#">Estudiantes</a></li><br><br><br>
+  </footer>
+  <p style="text-align: center;">&copy; Codo a Codo-23648- por Claudio Marcelo Argañaraz </p>
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
 </html>
